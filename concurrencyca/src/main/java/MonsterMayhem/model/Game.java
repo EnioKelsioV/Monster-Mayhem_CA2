@@ -1,12 +1,18 @@
-package MonsterMayhem.concurrencyca.model;
+package MonsterMayhem.model;
 
-import javax.persistence.*;
 import java.util.List;
+
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Game {
-	
-	@Id
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -18,8 +24,6 @@ public class Game {
 
     @ElementCollection
     private List<String> state;
-
-    private boolean completed = false;
 
 	public Long getId() {
 		return id;
@@ -52,13 +56,6 @@ public class Game {
 	public void setState(List<String> state) {
 		this.state = state;
 	}
-
-	public boolean isCompleted() {
-		return completed;
-	}
-
-	public void setCompleted(boolean completed) {
-		this.completed = completed;
-	}
+    
 
 }

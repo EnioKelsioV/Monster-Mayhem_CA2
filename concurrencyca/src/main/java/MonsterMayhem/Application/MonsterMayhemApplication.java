@@ -1,5 +1,4 @@
-package MonsterMayhem.concurrencyca.Application;
-MonsterMayhem.concurrencyca;
+package MonsterMayhem.Application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

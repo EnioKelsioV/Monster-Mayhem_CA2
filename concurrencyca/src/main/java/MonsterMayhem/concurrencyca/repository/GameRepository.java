@@ -1,5 +1,9 @@
 package MonsterMayhem.concurrencyca.repository;
 
-public interface GameRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import MonsterMayhem.model.Game;
+
+public interface GameRepository extends JpaRepository<Game, Long> {
 
 }

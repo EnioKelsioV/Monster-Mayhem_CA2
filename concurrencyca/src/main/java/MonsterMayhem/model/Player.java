@@ -1,12 +1,15 @@
-package MonsterMayhem.concurrencyca.model;
+package MonsterMayhem.model;
 
-import javax.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Player {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username;
     private int gamesWon = 0;
@@ -35,5 +38,5 @@ public class Player {
 	public void setGamesLost(int gamesLost) {
 		this.gamesLost = gamesLost;
 	}
-
+    
 }
