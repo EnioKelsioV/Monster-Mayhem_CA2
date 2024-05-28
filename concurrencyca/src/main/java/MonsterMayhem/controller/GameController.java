@@ -1,7 +1,7 @@
-package MonsterMayhem.concurrencyca.controller;
+package MonsterMayhem.controller;
 
-import MonsterMayhem.concurrencyca.repository.GameRepository;
 import MonsterMayhem.model.Game;
+import MonsterMayhem.repository.GameRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

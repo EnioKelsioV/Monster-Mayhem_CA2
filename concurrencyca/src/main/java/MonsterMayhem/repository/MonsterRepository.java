@@ -1,4 +1,4 @@
-package MonsterMayhem.concurrencyca.repository;
+package MonsterMayhem.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

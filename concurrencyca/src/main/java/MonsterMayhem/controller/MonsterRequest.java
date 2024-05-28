@@ -1,4 +1,4 @@
-package MonsterMayhem.concurrencyca.controller;
+package MonsterMayhem.controller;
 
 import MonsterMayhem.model.Game;
 
